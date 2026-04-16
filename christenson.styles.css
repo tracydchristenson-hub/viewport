@@ -171,6 +171,11 @@ table {
     line-height: 1.35;
 }
 
+body {
+    background-color: var(--white);
+    color: var(--dark-gray);
+}
+
 
 /* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
 
@@ -179,6 +184,13 @@ table {
 
 
 /* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-gray);
+        color: var(--white);
+    }
+}
 
 
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
